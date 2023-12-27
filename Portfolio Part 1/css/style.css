@@ -1,0 +1,359 @@
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+body {
+  margin: 0;
+  padding: auto;
+  min-height: 100vh;
+  height: auto;
+}
+.header {
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  background-color: #2b4246;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+}
+.header img {
+  width: 50px;
+  height: 60px;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header h2{
+  color: #ffffff;
+  margin-left: 30px;
+}
+.navigation {
+
+  float: right;
+  padding-right: 100px;
+  
+}
+.navigation ul li {
+  color: aliceblue;
+  text-transform: capitalize;
+  display: inline;
+
+  
+}
+.navigation ul li a {
+  font-size: 18px;
+  color: white;
+  padding-inline-start: 20px;
+  text-decoration: none;
+  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+ul li a:hover {
+  background-color: #fff;
+  color: #090909;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+ul li ul .dropdown li{
+display: block;
+}
+ul li ul .dropdown{
+width: 100%;
+background-color: #3a3131;
+position: absolute;
+z-index: 999;
+display: none;
+}
+.slider {
+  align-items: center;
+  height: 550px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.slide img {
+  display: flex;
+ margin-top: 80px;
+  width: 500px;
+  height: auto;
+  /* margin: 20px; */
+}
+.main {
+  background-color: #5c7b80;
+  width: auto;
+  height: 500px;
+  color: #fff;
+  display: flex;
+}
+.articel {
+  /* background-color: #010000; */
+  width: 360px;
+  height: 390px;
+  margin: 20px;
+  display: block;
+  margin-right: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.articel1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 6px;
+  margin-left: 140px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.mid {
+  text-align: center;
+  color: #9b2d2d;
+}
+/* .articel2 {
+  width:100%;
+  height: 30%;
+  background-color:5c7b80;
+  color: #ffffff;
+  padding: 20px;
+  margin: auto;
+
+} */
+.conten {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+}
+.conten img {
+  width: auto;
+  height: 400px;
+  margin-left: 300px;
+  transform: scalex(-1);
+  border-radius: 20px;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Ganti warna latar belakang sesuai kebutuhan */
+  color: #fff; /* Ganti warna teks sesuai kebutuhan */
+  padding: 20px;
+  
+}
+.info {
+  display: flex;
+}
+.contac-info {
+  width: 40%;
+  height: auto;
+  text-transform: capitalize;
+  display: block;
+  margin-left: 120px;
+}
+.media-sosial {
+  width: 40%;
+  height: auto;
+  text-transform: capitalize;
+  display: block;
+  margin-left: 120px;
+}
+.media-sosial a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+}
+.copyright {
+  text-align: center;
+}
+.copyright p span {
+  color: rgb(251, 255, 7);
+}
+
+
+/* About */
+.container-about{
+  margin-top: 80px;
+  background-color: #b61c1c;
+  width: auto;
+  height: 400px;
+  display: flex;
+}
+.img-about{
+  background-color: #ffffff;
+  width: 50%;
+}
+.img-about img{
+  height: 400px;
+  width: auto;
+  padding-left: 45%;
+}
+.info-about{
+background-color: #ffffff;
+width: 50%;
+padding-top: 40px;
+padding-right: 15%;
+}
+.info-about p{
+  color: #000000;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+.info-about span{
+  color: #ff8800;
+}
+.info-about p hr{
+color: red;
+border: 5px;
+}
+
+/* layanan */
+.container-lay{
+ 
+  margin-top: 40px;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 12px -10px #000;
+  background-color: #fff;
+  background-color: #9e9da9;
+}
+.layanan{
+  display: flex;
+  padding: 40px;
+  height: 300px;
+}
+.layanan1, .layanan2, .layanan3{
+  height: 500px;
+  width: 30%;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.layanan-img{
+  border-radius: 5px;
+  height: 300px;
+  width: 100%;
+  box-shadow: 10px 10px 8px rgba(10, 9, 9, 0.2);
+}
+.desk-layanan{
+  display: flex;
+  font-size: 24px;
+   color: white;
+}
+.layanan p{
+  color: white;
+  text-align: justify;
+  
+}
+.btn{
+  background-color: #39414f;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #484444;
+  margin-left: 2PX;
+}
+.container-concac{
+  background-color: #666;
+  height: 600px;
+  margin-top: 0;
+}
+.medsos-contac{
+  display: flex;
+  justify-content: center;
+}
+.medsos-contac h3{
+  color: white;
+  text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+.form{
+  
+  background-color: #666;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  margin-top: 50px;
+}
+form{
+  
+  background-color: #666;
+  height: auto;
+  border: #807f8a 2px solid;
+  border-radius: 5px;
+  padding: 20px 20px 30px 20px;
+  }
+  form h3{
+    color: #dce3e5;
+    display: flex;
+    justify-content: center;
+  }
+.form label{
+  color: #ffffff;
+  display: block;
+  height: auto;
+}
+.form input{
+  margin: 10px;
+  border-radius: 6px;
+}
+#username:focus, #email:focus, #textarea:focus {
+  background-color: #dce3e5;
+}
+.btn-form{
+  color: hsl(0, 0%, 100%);
+  background-color: #2600ff;
+  padding: 4px 16px 4px 16px;
+  border: #5c7b80 2px solid;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-form:hover{
+  background-color: #3b22c6;
+  color:hsl(0, 4%, 76%);
+}
+.medsos-contac{
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 200px;
+  width: auto;
+  background-color: #666;
+}
+
+.info-medsos{
+  color: #2600ff;
+  display: flex;
+justify-content: center;
+}
+.icon-contac{
+  justify-content: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+.img-icon{
+  margin: 0 20px 0 20px;
+  display: flex;
+  height: 40px;
+  width: auto;
+  box-shadow: 10px 10px 8px rgba(10, 9, 9, 0.1);
+}
